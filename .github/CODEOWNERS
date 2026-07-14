@@ -1,0 +1,12 @@
+# CODEOWNERS for the QS-AlgoTrading org (inherited default).
+# Docs: https://docs.github.com/en/repositories/managing-your-repositories-settings-and-features/customizing-your-repository/about-code-owners
+#
+# Default owners — every PR in repos without their own CODEOWNERS is
+# reviewable by the listed owners. Paired with branch protection
+# ("require code owner reviews", Phase 3), this becomes a hard requirement;
+# at Phase 2 (current) it drives review routing only.
+#
+# Founders: Farhad (@investincommerce); add Anahita's handle when her
+# GitHub account joins the org (tracked in docs/decisions/).
+
+* @investincommerce

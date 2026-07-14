@@ -1,0 +1,49 @@
+# Lychee link-checker configuration for QS-AlgoTrading.
+#
+# Canonical Eterne-family exclude set (private repos 404 to anonymous requests —
+# the repos exist; lychee just can't see them without authentication), copied
+# from eternecompass/.github per the Shape-A "copy + adjust" rule, PLUS the
+# QS-specific auth-gated / live-platform URLs.
+#
+# Source: eternecompass-docs/decisions/007-link-check-fix-and-required-status.md
+
+exclude = [
+  # --- Eterne family orgs (private repos, anonymous 404) ---
+  "github\\.com/eternecompass",
+  "github\\.com/e-trust-fintech",
+  "github\\.com/Ellington-Trust",
+  "github\\.com/ML-Studies",
+  "github\\.com/EllingtonTrade",
+  "github\\.com/IB-QS",
+  "github\\.com/eterneHabitat",
+  "github\\.com/eterneDelphi",
+  "github\\.com/erp4me-net",
+  "github\\.com/collectiveIntel",
+  # This org's own private repos:
+  "github\\.com/QS-AlgoTrading",
+  # Org-level surfaces (Projects, Discussions, Insights) at /orgs/<name>/...
+  "github\\.com/orgs/eternecompass",
+  "github\\.com/orgs/e-trust-fintech",
+  "github\\.com/orgs/Ellington-Trust",
+  "github\\.com/orgs/ML-Studies",
+  "github\\.com/orgs/EllingtonTrade",
+  "github\\.com/orgs/IB-QS",
+  "github\\.com/orgs/eterneHabitat",
+  "github\\.com/orgs/eterneDelphi",
+  "github\\.com/orgs/erp4me-net",
+  "github\\.com/orgs/collectiveIntel",
+  "github\\.com/orgs/QS-AlgoTrading",
+  # GitHub organization billing/admin URLs (auth-required, 404 to anonymous):
+  "github\\.com/organizations/",
+  # --- QS-specific (auth-gated or non-public surfaces) ---
+  # The live platform: everything behind sign-in redirects anonymous requests.
+  "quantstand\\.com",
+  # Delphi API (auth-gated) + its TLS domain root.
+  "delphi4cast\\.com",
+  # Infra hosts referenced in runbooks (SSH/internal only, no HTTP).
+  "5\\.223\\.68\\.99",
+  "46\\.224\\.135\\.185",
+  "151\\.246\\.1\\.49",
+  # Git hosting for the wider foundation (auth-gated).
+  "git\\.eternefoundation\\.com",
+]
