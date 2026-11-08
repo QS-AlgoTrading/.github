@@ -26,6 +26,7 @@ org-local development protocol is
 | [`quantstand-web`](https://github.com/QS-AlgoTrading/quantstand-web) | quantstand.com — the platform web app (private) | **Active · live** |
 | [`docs`](https://github.com/QS-AlgoTrading/docs) | Tier-2 org documentation — architecture, decisions, session summaries | Active |
 | [`cTrader-Algo-strategies`](https://github.com/QS-AlgoTrading/cTrader-Algo-strategies) | cTrader/FxPro strategy line (private) | Active-secondary |
+| [`optionlab`](https://github.com/QS-AlgoTrading/optionlab) | Options strategy analysis on ORATS data — analysis-only, never trades (private; DEC-QNT-062) | Paused · not deployed |
 | [`External-Connection`](https://github.com/QS-AlgoTrading/External-Connection) | Public signal layer | Public |
 | `OpenClaw-Bot` · `Grid-Strategy-Learning` · `Medallion-thinking-Quant-Work` · `Regiem-Detection` | Early research holdings (private) | Museum / experimental |
 
